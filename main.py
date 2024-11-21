@@ -1,5 +1,7 @@
 from databricks.connect import DatabricksSession as SparkSession
 from databricks.sdk.core import Config
+
+from jobs.job_predictions import ModelPredictions
 from jobs.job_training import ModelTraining
 
 
@@ -10,7 +12,10 @@ if __name__ == "__main__":
     # df = spark.read.table("databricks_efc_2.default.monthly_events")
     # df.show(5)
 
-    job = ModelTraining(spark)
+    # job = ModelTraining(spark)
+    # job.run()
+
+    job = ModelPredictions(spark)
     job.run()
 
 

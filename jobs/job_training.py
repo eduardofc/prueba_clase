@@ -11,7 +11,6 @@ class ModelTraining:
         self.spark = spark
         self.tabla_monthly_events = "databricks_efc_2.default.monthly_events"
         self.tabla_monthly_features = "databricks_efc_2.default.monthly_features"
-        self.tabla_predictions = "databricks_efc_2.default.monthly_features"
         self.tabla_metrics = "databricks_efc_2.default.metrics"
         self.tabla_train = "databricks_efc_2.default.train"
         self.tabla_test = "databricks_efc_2.default.test"
